@@ -1,12 +1,12 @@
 # 입출력 처리
-a = input()
-print(a)
-print(type(a))
+# a = input()
+# print(a)
+# print(type(a))
 
 # 정수로 변환
-a = input()
-a = int(a)
-print(a, type(a))
+# a = input()
+# a = int(a)
+# print(a, type(a))
 
 a = int(input())
 print(a, type(a))
