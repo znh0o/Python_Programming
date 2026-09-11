@@ -111,21 +111,21 @@ days = ("일","월","화","수","목","금","토")
 hours = (2, 3, 1, 4, 5, 2, 6)
 
 # 1️⃣ 월 ~ 금까지 총 학습시간 출력하기
-print(sum(hours[1:5]))              # ✅ 15시간
+print(sum(hours[1:5]))             
 
 
 # 2️⃣ 가장 많이 공부한 시간 출력하기
-print(max(hours))                   # ✅ 6시간
+print(max(hours))                  
 
 
 # 3️⃣ 가장 많이 공부한 요일 출력하기
-print(days[hours.index(max(hours))])  # ✅ 토요일
+print(days[hours.index(max(hours))]) 
 
 
 # 4️⃣ 가장 높은 점수와 가장 낮은 점수 출력하기
 scores = (90, 85, 78, 92, 88, 76)
 
-print(f"최고 점수: {max(scores)}점, 최저 점수: {min(scores)}점")    # ✅ max 점수: 92점, min 점수: 76점
+print(f"최고 점수: {max(scores)}점, 최저 점수: {min(scores)}점")    # max 점수: 92점, min 점수: 76점
 
 
 # 5️⃣ 과일가게 총 재고 금액 구하기
@@ -136,5 +136,15 @@ stocks = (
 )
 
 # 총 재고 금액 출력
-total_stock_value = sum(price * quantity for _, price, quantity in stocks)
-print(f"총액: {total_stock_value:,}원")  # ✅ 총액: 21,000원
+total = sum(price * quantity for _, price, quantity in stocks)
+total = sum([price * quantity for _, price, quantity in stocks])
+print(f"총액: {total:,}원")  
+
+stocks = (
+    ("사과","바나나","체리"),
+    (1000, 2000, 5000),
+    (5, 3, 2)
+)
+
+total = sum(price * quantity for price, quantity in zip(stocks[1], stocks[2]))
+print(f"총액: {total:,}원")  
