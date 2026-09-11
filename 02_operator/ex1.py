@@ -12,6 +12,9 @@ print(a//b) #나머지
 print(a%b) #몫
 print(a**b) #제곱
 
+#10 / 3 = 3
+print(10/2)
+
 #복합대입 연산자
 a += 4
 print(a)
